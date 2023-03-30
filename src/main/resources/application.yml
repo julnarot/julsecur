@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:memDB
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        format_sql: true
+
+  h2:
+    console:
+      enabled: true
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem
