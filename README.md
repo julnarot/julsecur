@@ -9,7 +9,7 @@ export JAVA_HOME=/usr/lib/jvm/jdk-17
 ``
 ## login enpoint
 
-``
+```bash
 curl --location 'http://localhost:8080/api/v1/auth/sign-up' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -18,7 +18,7 @@ curl --location 'http://localhost:8080/api/v1/auth/sign-up' \
     "email": "julnarot@gmail.com",
     "password": "123456"
 }'
-``
+```
 
 
 ### h2 console
